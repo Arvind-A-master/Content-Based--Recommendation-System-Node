@@ -1,0 +1,10 @@
+const express = require('express');
+const router = express.Router();
+
+const {recommendationSystem} = require('../controller/recomendation')
+
+
+
+router.route('/:itemId/recommendations').get(recommendationSystem)
+
+module.exports = router;
